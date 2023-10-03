@@ -1,12 +1,16 @@
-import { SectionWrapper } from "../hoc";
 import Navbar from "./Navbar";
 import { BiPhoneCall } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
+import ImageSlider from "./ImageSlider";
+import HeroFooter from "./HeroFooter";
+import VideoTour from "./VideoTour";
+import Specifications from "./Specifications";
 
+// section above the nav bar
 const Hero = () => {
   return (
     <>
-      <div className="w-full mt-0 mx-3 p-4 flex items-center justify-between">
+      <div className="sm:px-10 px-4 py-3 max-w-7xl relative z-0 w-full mt-0 mx-auto p-4 flex items-center justify-between">
         {/* Left side with logo */}
         <div className="flex items-center">
           <img
@@ -32,15 +36,13 @@ const Hero = () => {
           <CiLocationOn className="text-blue-400 mx-3 text-2xl" />
         </div>
       </div>
+      <Navbar />
+      <ImageSlider />
+      <HeroFooter />
+      <VideoTour />
+      <Specifications />
     </>
   );
 };
 
-const HeroWithWrapper = SectionWrapper(Hero, "hero");
-
-export default () => (
-  <>
-    <HeroWithWrapper />
-    <Navbar />
-  </>
-);
+export default Hero;

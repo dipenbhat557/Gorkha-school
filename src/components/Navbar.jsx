@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="sm:px-16 px-6 w-full flex items-center py-4 bg-blue-400 z-20">
       <div className="w-full flex items-center justify-between">
-        <ul className="list-none sm:flex gap-10 hidden">
+        <ul className="list-none sm:flex gap-6 md:gap-10 hidden">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
         <div className="flex flex-row justify-center">
           <input
-            className="rounded-xl p-1 pl-4"
+            className="rounded-xl p-1 pl-4 ml-6 md:ml-0"
             type="text"
             placeholder="Type to search"
           />
