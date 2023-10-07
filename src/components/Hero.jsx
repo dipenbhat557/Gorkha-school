@@ -1,46 +1,35 @@
 import Navbar from "./Navbar";
 import { BiPhoneCall } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
-import ImageSlider from "./ImageSlider";
-import HeroFooter from "./HeroFooter";
-import VideoTour from "./VideoTour";
-import Specifications from "./Specifications";
 
-// section above the nav bar
 const Hero = () => {
   return (
     <>
-      <div className="sm:px-10 px-4 py-3 max-w-7xl relative z-0 w-full mt-0 mx-auto p-4 flex items-center justify-between">
-        {/* Left side with logo */}
-        <div className="flex items-center">
-          <img
-            src="src/assets/gorkhalogo.png"
-            alt="logo"
-            className="object-contain w-11 h-13 mr-2"
-          />
-        </div>
+      <div className="sm:px-10 px-4 py-3 max-w-7xl relative z-0 w-full h-[100px] mt-0 mx-auto p-4 flex items-center justify-between">
+        <img
+          src="src/assets/gorkhalogo.png"
+          alt="logo"
+          className="object-contain w-20 h-25 mr-2"
+        />
 
-        {/* Right side with phone icon */}
         <div className="flex items-center">
           <a
             href="#form"
-            className="bg-blue-400 p-3 rounded-xl text-white mr-4"
+            className="bg-blue-400 text-[13px] md:text-18px p-3 rounded-xl text-white mr-4 hover:bg-blue-500"
           >
             ADMISSION FORM
           </a>
-          <a href="#connect" className="text-white p-3 rounded-xl bg-blue-400">
+          <a
+            href="#connect"
+            className="text-[13px] md:text-18px text-white p-3 rounded-xl bg-blue-400 hover:bg-blue-500"
+          >
             CONNECT WITH US
           </a>
-          <BiPhoneCall className="text-blue-400 mx-3 text-2xl" />
+          <BiPhoneCall className="text-blue-400 mx-3 text-2xl hover:bg-blue-500 hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
 
-          <CiLocationOn className="text-blue-400 mx-3 text-2xl" />
+          <CiLocationOn className="text-blue-400 mx-3 text-2xl hover:bg-blue-500 hover:bg-blue-500 hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
         </div>
       </div>
-      <Navbar />
-      <ImageSlider />
-      <HeroFooter />
-      <VideoTour />
-      <Specifications />
     </>
   );
 };

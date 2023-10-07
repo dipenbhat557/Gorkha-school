@@ -27,15 +27,15 @@ const ImageSlider = () => {
             alt={`Image ${index}`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute left-0 bottom-0 w-[80%] p-2 text-white text-[19px] md:text-[36px] font-semibold">
-            <b>CENTER OF EXCELLENCE SINCE 2001</b>
-            {/* <hr className="w-[50%] mx-4" /> */}
-            <br />
-            We believe in creating a nurturing environment. As a
-            <br />
-            pioneering institute that introduced child-centered learning in
-            Nepal, Gorkha is known for its progressive education.
-            <br />
+          <div className="absolute left-3 bottom-7 md:w-[40%] w-[60%] p-2 text-white font-semibold  md:leading-loose">
+            <p className="mb-2 font-bold text-[18px] md:text-[22px]">
+              CENTER OF EXCELLENCE SINCE 2001
+            </p>
+            <p className="text-[16px] md:text-[18px]">
+              We believe in creating a nurturing environment. As a pioneering
+              institute that introduced child-centered learning in Nepal, Gorkha
+              is known for its progressive education.
+            </p>
             <br />
           </div>
         </div>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
 import { AiOutlineSearch } from "react-icons/ai";
-import { CiLocationOn } from "react-icons/ci";
 
 const Navbar = () => {
   const [active, setActive] = useState("HOME");
+  const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="sm:px-16 px-6 w-full flex items-center py-4 bg-blue-400 z-20">
@@ -14,10 +14,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`text-white text-18px font-medium cursor-pointer ${
-                active === link.title
-                  ? "border-b-2 border-white rounded-full"
-                  : ""
-              } hover:border-b-2 hover:border-white hover:rounded-full transition-all duration-300`}
+                active === link.title ? "border-b-2 border-white " : ""
+              } hover:border-b-2 hover:border-white  transition-all duration-300 `}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -30,7 +28,40 @@ const Navbar = () => {
             type="text"
             placeholder="Type to search"
           />
-          <AiOutlineSearch className="m-2 text-2xl text-white" />
+          <AiOutlineSearch className="m-2 text-2xl text-white hover:bg-blue-500 hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
+        </div>
+        {/* Mobile menu */}
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            src={toggle ? "src/assets/close.png" : "src/assets/menu.png"}
+            alt="menu"
+            className="w-[30px] h-[30px] object-contain cursor-pointer rounded-3xl text-2xl"
+            onClick={() => setToggle(!toggle)}
+          />
+
+          {/* Mobile menu items */}
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 bg-blue-400 absolute top-12 right-0 mx-4 my-20 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } font-poppins text-[16px] font-medium cursor-pointer`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
+                >
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

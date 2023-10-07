@@ -12,4 +12,37 @@ import s2 from "./specImages/s2.png";
 import s3 from "./specImages/s3.png";
 import s4 from "./specImages/s4.png";
 
-export { img1, img2, img3, img4, f1, f2, f3, s1, s2, s3, s4 };
+import principal from "./messageImages/principal.jpeg";
+import founder from "./messageImages/founder.jpeg";
+
+import UNevent from "./eventsImages/UNevent.jpg";
+import basketball from "./eventsImages/basketball.jpg";
+import PTMevent from "./eventsImages/PTMevent.jpg";
+import cultural from "./eventsImages/cultural.jpg";
+
+import almuni from "./galleryImages/almuni.jpg";
+import faculties from "./galleryImages/faculties.jpg";
+import parents from "./galleryImages/parents.jpg";
+
+export {
+  img1,
+  img2,
+  img3,
+  img4,
+  f1,
+  f2,
+  f3,
+  s1,
+  s2,
+  s3,
+  s4,
+  principal,
+  founder,
+  UNevent,
+  PTMevent,
+  basketball,
+  cultural,
+  almuni,
+  parents,
+  faculties,
+};
