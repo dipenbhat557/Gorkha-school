@@ -1,3 +1,5 @@
+import { logo, logo1, logo2 } from "../assets";
+
 const Footer = () => {
   const handleReadMore = () => {};
   return (
@@ -6,21 +8,9 @@ const Footer = () => {
       <div className="flex items-center justify-between w-[full] h-[80%]">
         <div className="flex w-[40%] flex-col h-full">
           <div className="flex mt-4 ml-6 justify-around w-full h-[25%] md:h-[40%]">
-            <img
-              src="src/assets/logo1.jpg"
-              className=" w-[25%] h-full"
-              alt="logo1"
-            />
-            <img
-              src="src/assets/logo2.jpg"
-              className=" w-[25%] h-full"
-              alt="logo2"
-            />
-            <img
-              src="src/assets/gorkhalogo.png"
-              className=" w-[25%] h-full"
-              alt="gorkha logo"
-            />
+            <img src={logo1} className=" w-[25%] h-full" alt="logo1" />
+            <img src={logo2} className=" w-[25%] h-full" alt="logo2" />
+            <img src={logo} className=" w-[25%] h-full" alt="gorkha logo" />
           </div>
           <div className="m-4 text-[12px] md:text-[14px] leading-loose">
             <p className="font-bold">About Us</p>
@@ -39,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center h-[80%] md:h-full w-[25%] mt-0">
           <img
-            src="src/assets/gorkhalogo.png"
+            src={logo}
             className="w-[50%] h-[50%] object-contain"
             alt="logo"
           />

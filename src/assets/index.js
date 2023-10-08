@@ -1,3 +1,7 @@
+import logo from "./gorkhalogo.png";
+import logo1 from "./logo1.jpg";
+import logo2 from "./logo2.jpg";
+
 import img1 from "./sliderImages/img1.png";
 import img2 from "./sliderImages/img2.png";
 import img3 from "./sliderImages/img3.png";
@@ -25,6 +29,9 @@ import faculties from "./galleryImages/faculties.jpg";
 import parents from "./galleryImages/parents.jpg";
 
 export {
+  logo,
+  logo1,
+  logo2,
   img1,
   img2,
   img3,

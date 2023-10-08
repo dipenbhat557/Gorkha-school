@@ -1,16 +1,13 @@
 import Navbar from "./Navbar";
 import { BiPhoneCall } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
+import { logo } from "../assets";
 
 const Hero = () => {
   return (
     <>
       <div className="sm:px-10 px-4 py-3 max-w-7xl relative z-0 w-full h-[100px] mt-0 mx-auto p-4 flex items-center justify-between">
-        <img
-          src="src/assets/gorkhalogo.png"
-          alt="logo"
-          className="object-contain w-20 h-25 mr-2"
-        />
+        <img src={logo} alt="logo" className="object-contain w-20 h-25 mr-2" />
 
         <div className="flex items-center">
           <a
@@ -27,7 +24,7 @@ const Hero = () => {
           </a>
           <BiPhoneCall className="text-blue-400 mx-3 text-2xl hover:bg-blue-500 hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
 
-          <CiLocationOn className="text-blue-400 mx-3 text-2xl hover:bg-blue-500 hover:bg-blue-500 hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
+          <CiLocationOn className="text-blue-400 mx-3 text-2xl hover:bg-blue-500  hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
         </div>
       </div>
     </>
