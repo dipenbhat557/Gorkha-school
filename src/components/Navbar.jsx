@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="sm:px-16 px-6 w-full flex items-center py-4 bg-blue-400 z-20 relative">
+    <nav className="sm:px-16 px-6 w-[98%] sm:w-full mx-auto rounded-t-md flex items-center py-4 bg-blue-400 z-20 relative">
       <div className="w-full flex items-center justify-between">
         <ul className="list-none sm:flex gap-6 md:gap-10 hidden">
           {navLinks.map((link) => (

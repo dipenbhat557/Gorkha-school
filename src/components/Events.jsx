@@ -43,7 +43,7 @@ const Events = () => {
 
   return (
     <div className="w-[95%] h-[300px] mx-[18px]">
-      <div className="flex items-center justify-between ml-3 font-semibold w-full h-[50px]">
+      <div className="flex items-center justify-between ml-3 font-semibold w-[90%] h-[50px]">
         <div className="flex items-center justify-center w-[20%]">
           <p className="text-black text-[18px] md:text-[20px] mr-2">Events</p>
           <div className="w-[45%] h-[5px] border-b-4 border-blue-400 rounded-3xl" />
