@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="sm:px-16 px-6 w-full flex items-center py-4 bg-blue-400 z-20 relative">
-      <div className="w-full flex items-center justify-evenly sm:justify-between">
+      <div className="w-full flex items-center justify-around sm:justify-between">
         <ul className="list-none sm:flex gap-6 md:gap-10 hidden">
           {navLinks.map((link) => (
             <li
@@ -22,16 +22,16 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center w-[60%]">
           <input
-            className="rounded-xl p-1 pl-4 ml-6 md:ml-0 max-w-[70%] sm:max-w-[65%]"
+            className="rounded-xl p-1 pl-4 ml-6 md:ml-0 max-w-[53%] sm:max-w-[65%]"
             type="text"
             placeholder="Type to search"
           />
           <AiOutlineSearch className="m-2 text-2xl text-white hover:bg-blue-500 hover:text-4xl hover:rounded-xl hover:text-white hover:p-2" />
         </div>
         {/* Mobile menu */}
-        <div className="sm:hidden flex items-center">
+        <div className="sm:hidden flex items-center w-[30%]">
           <img
             src={toggle ? "src/assets/close.png" : "src/assets/menu.png"}
             alt="menu"
