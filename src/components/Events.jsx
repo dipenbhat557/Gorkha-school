@@ -63,7 +63,7 @@ const Events = () => {
               key={index}
             >
               <img
-                className="object-contain rounded-2xl w-[350px] h-[250px]"
+                className="object-contain w-[100%] h-[80%]"
                 src={events.img}
                 alt={events.title}
               />

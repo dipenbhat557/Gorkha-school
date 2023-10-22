@@ -47,8 +47,8 @@ const Footer = () => {
         </div>
       </div>
       <div className=" w-full flex items-center justify-center mb-0 absolute text-center">
-        <p className="font-bold bg-blue-400 p-2 rounded-t-md leading-loose">
-          Copyright &copy;2023 Gorkha Secondary School
+        <p className="font-bold text-[14px] md:text-[18px] bg-blue-400 p-2 rounded-t-md leading-loose">
+          Copyright &copy;2023-24 Gorkha Secondary School
         </p>
       </div>
     </div>

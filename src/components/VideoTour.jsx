@@ -49,18 +49,19 @@ const VideoTour = () => {
           <br /> Gorkha School
         </p>
       </div>
-      <div className="h-[350px] w-full flex justify-around mt-14">
+      <div className="h-[350px] w-full flex justify-around  mt-14">
         <div className="h-full w-[53%] rounded-2xl">
           <div
             style={{
               position: "relative",
               paddingBottom: "40.25%",
               height: "100%",
+              width: "100%",
             }}
           >
             <iframe
               ref={videoRef}
-              src="https://www.youtube.com/embed/8W7ieJ8sGhE?autoplay=1&mute=1&replay=1"
+              src="https://www.youtube.com/embed/8W7ieJ8sGhE?autoplay=1&mute=1&loop=1&controls=0"
               title="Video"
               frameBorder="0"
               allow="autoplay; encrypted-media"
@@ -72,6 +73,7 @@ const VideoTour = () => {
                 width: "100%",
                 height: "100%",
               }}
+              className="rounded-2xl"
             />
           </div>
         </div>

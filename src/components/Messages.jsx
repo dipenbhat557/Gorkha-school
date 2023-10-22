@@ -8,7 +8,7 @@ const Messages = () => {
         className="bg-blue-400 w-[80px] h-[120px] flex justify-start mt-0.5 ml-[30px] rounded-b-xl"
         style={{ position: "absolute", zIndex: 0 }}
       ></div>
-      <div className="w-full h-[80%] flex flex-row justify-around items-center mx-[12px] md:mx-[18px] mt-0 mb-10">
+      <div className="w-full h-[80%] flex flex-row justify-around items-center mx-[12px] md:mx-[18px] mt-14 md:mt-10  mb-10">
         {messageItems.map((message, index) => {
           return (
             <div
