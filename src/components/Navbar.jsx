@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
-import { AiOutlineSearch } from "react-icons/ai";
+import {
+  AiOutlineMenuUnfold,
+  AiOutlineMenuFold,
+  AiOutlineSearch,
+} from "react-icons/ai";
 
 const Navbar = () => {
   const [active, setActive] = useState("HOME");
@@ -8,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="sm:px-16 px-6 w-full flex items-center py-4 bg-blue-400 z-20 relative">
-      <div className="w-full flex items-center justify-around sm:justify-between">
+      <div className="w-full flex items-center justify-between sm:justify-between">
         <ul className="list-none sm:flex gap-6 md:gap-10 hidden">
           {navLinks.map((link) => (
             <li
@@ -32,12 +36,17 @@ const Navbar = () => {
         </div>
         {/* Mobile menu */}
         <div className="sm:hidden flex items-center w-[30%]">
-          <img
-            src={toggle ? "src/assets/close.png" : "src/assets/menu.png"}
-            alt="menu"
-            className="w-[30px] h-[30px] object-contain cursor-pointer rounded-3xl text-2xl"
-            onClick={() => setToggle(!toggle)}
-          />
+          {toggle ? (
+            <AiOutlineMenuUnfold
+              className="text-2xl text-white"
+              onClick={() => setToggle(!toggle)}
+            />
+          ) : (
+            <AiOutlineMenuFold
+              className="text-2xl text-white"
+              onClick={() => setToggle(!toggle)}
+            />
+          )}
           <ul
             className={`${
               !toggle ? "hidden" : "flex"

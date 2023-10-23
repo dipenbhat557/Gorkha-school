@@ -41,17 +41,22 @@ const Events = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
+  const handleShowEvents = () => {};
+
   return (
-    <div className="w-[95%] h-[300px] mx-[18px]">
+    <div className="w-[95%] h-[300px] mx-auto">
       <div className="flex items-center justify-between ml-3 font-semibold w-[90%] h-[50px]">
         <div className="flex items-center justify-center w-[20%]">
           <p className="text-black text-[18px] md:text-[20px] mr-2">Events</p>
           <div className="w-[45%] h-[5px] border-b-4 border-blue-400 rounded-3xl" />
         </div>
 
-        <div className="flex items-center">
-          <p className="text-red-400 text-18px">View All Events</p>
-          <AiOutlineArrowRight className="text-red-400 text-3xl ml-4" />
+        <div
+          className="flex items-center mr-2 cursor-pointer text-red-400 hover:bg-red-400 hover:text-white hover:rounded-xl hover:p-2"
+          onClick={handleShowEvents}
+        >
+          <p className="  text-18px">View All Events</p>
+          <AiOutlineArrowRight className="text-3xl ml-4" />
         </div>
       </div>
 
@@ -59,11 +64,11 @@ const Events = () => {
         {currentEvents.map((events, index) => {
           return (
             <div
-              className="flex flex-col items-center w-[30%] h-full"
+              className="flex flex-col items-center w-[30%] hover:w-[35%] hover:bg-slate-100 hover:rounded-xl h-full"
               key={index}
             >
               <img
-                className="object-contain w-[100%] h-[80%]"
+                className="object-contain w-[100%] h-[80%] hover:h-[85%]"
                 src={events.img}
                 alt={events.title}
               />

@@ -14,7 +14,7 @@ const ImageSlider = () => {
   });
 
   return (
-    <div className="relative w-full h-[569px]">
+    <div className="relative min-w-full h-[569px]">
       {sliderImages.map((slide, index) => (
         <div
           key={index}

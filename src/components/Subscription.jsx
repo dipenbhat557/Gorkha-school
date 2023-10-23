@@ -14,7 +14,7 @@ const Subscription = () => {
         Subscribe to our Newsletter to get the latest news, updates delivered
         directly to your inbox.
       </p>
-      <div className="my-2 mb-6">
+      <div className="my-2 mb-6 flex-wrap justify-center items-center flex flex-row">
         <input
           type="text"
           placeholder="Enter your mail address"
@@ -22,7 +22,7 @@ const Subscription = () => {
         />
         <button
           onClick={handleSubscribe}
-          className="bg-blue-400 font-bold text-white hover:shadow-2xl hover:bg-blue-500 ml-3 p-2 px-4 rounded-2xl"
+          className="bg-blue-400 font-bold text-white hover:shadow-2xl mt-2 hover:bg-blue-500 ml-3 p-2 px-4 rounded-2xl"
         >
           Subscribe
         </button>

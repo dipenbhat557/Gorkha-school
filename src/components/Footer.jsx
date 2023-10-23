@@ -3,10 +3,10 @@ import { logo, logo1, logo2 } from "../assets";
 const Footer = () => {
   const handleReadMore = () => {};
   return (
-    <div className="w-full h-[400px] bg-gray-200 ">
+    <div className="w-full h-[420px] sm:h-[400px] bg-gray-200 mb-0">
       <p className="font-bold text-[18px] mx-4 pt-2">Our Branches</p>
       <div className="flex items-center justify-between w-[full] h-[80%]">
-        <div className="flex w-[40%] flex-col h-full">
+        <div className="flex w-[50%] sm:w-[40%] flex-col h-full">
           <div className="flex mt-4 ml-6 justify-around w-full h-[25%] md:h-[40%]">
             <img src={logo1} className=" w-[25%] h-full" alt="logo1" />
             <img src={logo2} className=" w-[25%] h-full" alt="logo2" />

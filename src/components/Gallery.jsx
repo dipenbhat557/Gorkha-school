@@ -14,7 +14,7 @@ const Gallery = () => {
         {galleryItems.map((item, index) => {
           return (
             <div
-              className="flex flex-col items-center w-[30%] h-full"
+              className="flex flex-col items-center w-[30%] h-full hover:w-[35%]"
               key={index}
             >
               <div className="relative w-full h-full">
@@ -24,7 +24,7 @@ const Gallery = () => {
                   alt={item.title}
                 />
                 <p
-                  className="text-[13px] font-extrabold text-white flex flex-row absolute bottom-2 right-2 ml-3 mb-3 hover:bg-blue-100 hover:p-1 hover:rounded-2xl hover:text-black"
+                  className="text-[13px] font-extrabold text-white flex flex-row absolute bottom-2 right-2 ml-3 mb-3 hover:bg-slate-100 hover:p-1 hover:rounded-2xl hover:text-black"
                   onClick={handleMore}
                 >
                   {item.title}

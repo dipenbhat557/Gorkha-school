@@ -3,12 +3,12 @@ import { specConst } from "../constants";
 const Specifications = () => {
   return (
     <div className="flex w-[80%] mx-auto mt-2 h-[100px] md:h-[160px] py-3 px-7">
-      <div className="flex h-full  w-full items-center justify-around pt-3 bg-blue-400 rounded-2xl">
+      <div className="flex h-full  w-full items-center justify-around bg-blue-400 rounded-2xl">
         {specConst.map((spec, index) => {
           return (
             <div
               key={index}
-              className="flex items-center  flex-col h-full w-[18%]"
+              className="flex items-center  flex-col h-full w-[18%] pt-2 hover:bg-blue-500 hover:rounded-lg hover:m-2"
             >
               <div className="h-[35%] w-[35%] md:pb-2">
                 <img

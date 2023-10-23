@@ -6,7 +6,7 @@ import { logo } from "../assets";
 const Hero = () => {
   return (
     <>
-      <div className="sm:px-10 px-4 py-3 max-w-7xl relative z-0 w-full h-[100px] mt-0 mx-auto p-4 flex items-center justify-between">
+      <div className="sm:px-10 px-4 py-3 max-w-7xl relative z-0 min-w-full h-[100px] mt-0 mx-auto p-4 flex items-center justify-between">
         <img src={logo} alt="logo" className="object-contain w-20 h-25 mr-2" />
 
         <div className="flex items-center">

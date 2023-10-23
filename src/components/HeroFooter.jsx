@@ -9,7 +9,7 @@ const HeroFooter = () => {
         return (
           <div
             key={index}
-            className="flex flex-row h-[80%] md:h-full w-[15%] md:w-[22%]  md:ml-6 p-3"
+            className="flex flex-row h-[80%] md:h-full w-[15%] md:w-[22%]  md:ml-6 p-3 hover:bg-blue-500 hover:rounded-xl"
           >
             <img
               src={`${item.img}`}
@@ -28,7 +28,7 @@ const HeroFooter = () => {
         );
       })}
 
-      <div className="bg-blue-500 rounded-r-none rounded-2xl mr-0 p-2 pt-4 h-full  ml-8 md:mr-19 md:px-9">
+      <div className="bg-blue-500 rounded-r-none rounded-2xl mr-0 p-2 pt-4 h-full  ml-8 md:mr-19 md:px-9 hover:bg-blue-600 hover:rounded-xl">
         <p className="text-[12px] font-light md:text-18px">
           FEEL FREE TO ASK ANY QUERY
         </p>
